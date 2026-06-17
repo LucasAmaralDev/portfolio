@@ -9,7 +9,7 @@ export default function SobreMim() {
 
         <div className="mt-6 max-w-[720px] space-y-4 text-center text-base leading-relaxed text-stone-600 dark:text-stone-400 sm:text-lg">
             <p>
-                Desenvolvedor Fullstack Pleno com mais de 2 anos construindo
+                Desenvolvedor Fullstack Pleno com mais de 3 anos construindo
                 sistemas robustos do zero. De plataformas SaaS de
                 georreferenciamento para prefeituras até a modernização de
                 sistemas governamentais como o Detran-MT e o app MT Cidadão.

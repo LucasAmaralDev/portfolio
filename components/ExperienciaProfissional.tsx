@@ -2,31 +2,49 @@ import { Briefcase, MapPin } from "lucide-react";
 
 const experiencias = [
   {
-    cargo: "Desenvolvedor Fullstack Pleno",
-    empresa: "Projetos Próprios & Freelancer",
-    local: "Cuiabá, MT",
-    periodo: "2023 — Atual",
+    cargo: "Desenvolvedor Full Stack",
+    empresa: "DDTank Universe",
+    local: "Brasil",
+    periodo: "Set 2024 — Atual",
     descricao:
-      "Desenvolvo e mantenho sistemas completos para clientes reais, do backend com Node.js e bancos relacionais até o frontend com React e Next.js. Também crio e opero projetos próprios como o DDTank Universe e LinkasBio, aplicando visão de produto e gestão de comunidade.",
-    stacks: ["Next.js", "React", "Node.js", "PostgreSQL", "SQL Server", "Tailwind CSS", "Electron.js"],
+      "Atuo como full stack no ecossistema digital completo do jogo: site oficial com React.js e Next.js, aplicação desktop com Electron.js, APIs robustas em Node.js com Express e autenticação JWT, processamento de eventos em tempo real com WebSockets, modelagem e otimização de consultas em SQL Server com TypeORM, e infraestrutura com Nginx. Também desenvolvi sistemas de pagamentos e recompensas integrados.",
+    stacks: ["React.js", "Next.js", "Electron.js", "Node.js", "WebSockets", "SQL Server", "Nginx"],
   },
   {
-    cargo: "Desenvolvedor Fullstack",
-    empresa: "SaaS de Georreferenciamento",
+    cargo: "Engenheiro de Software",
+    empresa: "Lexin Innovations",
+    local: "Cuiabá, MT",
+    periodo: "Mai 2025 — Dez 2025",
+    descricao:
+      "Engenheiro Fullstack no projeto ESeiafMT, voltado para licitações públicas. Apliquei Domain-Driven Design e Clean Architecture para construir um sistema modular. No backend, APIs escaláveis com NestJS, TypeORM e PostgreSQL. No frontend, interfaces com Next.js, PrimeReact e gerenciamento de estado com Zustand e Zod. Implantei cultura de testes automatizados com Jest e participei ativamente das decisões arquiteturais e de produto.",
+    stacks: ["NestJS", "Next.js", "TypeORM", "PostgreSQL", "PrimeReact", "Zustand", "Jest"],
+  },
+  {
+    cargo: "Desenvolvedor Full Stack",
+    empresa: "Liquid AI",
     local: "Remoto",
-    periodo: "2024 — 2025",
+    periodo: "Mar 2025 — Mai 2025",
     descricao:
-      "Atuei na construção de plataformas SaaS de georreferenciamento para prefeituras, desenvolvendo sistemas robustos do zero. Trabalhei com NestJS no backend, Next.js no frontend e PostgreSQL como banco principal, entregando soluções escaláveis para o setor público.",
-    stacks: ["NestJS", "Next.js", "TypeScript", "PostgreSQL", "React"],
+      "Desenvolvimento de soluções para o setor imobiliário com foco em análise de crédito e risco. Projetei e implementei integrações com APIs de terceiros como Serasa e Equifax. No backend, Python com arquitetura Serverless e MongoDB. No frontend, React com interfaces responsivas para uso interno e clientes da plataforma.",
+    stacks: ["Python", "Serverless", "MongoDB", "React", "Serasa API", "Equifax API"],
   },
   {
-    cargo: "Desenvolvedor Fullstack",
-    empresa: "Detran-MT / MT Cidadão",
+    cargo: "Desenvolvedor de Software",
+    empresa: "MTI — Empresa Mato-grossense de Tecnologia da Informação",
     local: "Cuiabá, MT",
-    periodo: "2023 — 2024",
+    periodo: "Fev 2024 — Mar 2025",
     descricao:
-      "Participei da modernização de sistemas governamentais do estado de Mato Grosso, incluindo o Detran-MT e o aplicativo MT Cidadão. Contribuí com a migração de sistemas legados para stacks modernas, melhorando performance, manutenibilidade e experiência do cidadão.",
-    stacks: ["TypeScript", "React", "Node.js", "SQL Server", "PostgreSQL"],
+      "Atuei na manutenção e evolução dos sistemas do Detran-MT e do aplicativo MT Cidadão. Desenvolvi e padronizei templates para React e Node.js, corrigi bugs críticos, refatorei código legado e implementei testes unitários. Integrei APIs com NestJS, configurei monitoramento com Graylog e Sentry, e gerenciei bancos de dados para alta disponibilidade.",
+    stacks: ["React", "Node.js", "NestJS", "TypeScript", "Graylog", "Sentry"],
+  },
+  {
+    cargo: "Desenvolvedor Full Stack — Georreferenciamento",
+    empresa: "WCOGEO",
+    local: "Cuiabá, MT",
+    periodo: "Ago 2023 — Out 2024",
+    descricao:
+      "Desenvolvi um sistema SaaS completo de georreferenciamento para prefeituras, otimizando a gestão de regularização fundiária e administração territorial. Backend com Node.js, TypeORM e PostgreSQL/SQL Server integrado ao GeoServer. Frontend com React e OpenLayers para análise geoespacial interativa. Infraestrutura com Docker, Nginx e servidores Windows/Linux.",
+    stacks: ["Node.js", "TypeORM", "PostgreSQL", "SQL Server", "GeoServer", "React", "OpenLayers", "Docker"],
   },
 ];
 
@@ -41,23 +59,18 @@ export default function ExperienciaProfissional() {
           Minha trajetória construindo software para governo, startups e projetos próprios.
         </p>
 
-        {/* Timeline */}
         <div className="mt-12 space-y-0">
           {experiencias.map((exp, i) => (
             <div key={i} className="relative flex gap-6 pb-10 last:pb-0">
-              {/* Linha da timeline */}
               {i < experiencias.length - 1 && (
                 <div className="absolute left-[19px] top-10 bottom-0 w-0.5 bg-stone-200 dark:bg-stone-700" />
               )}
 
-              {/* Ícone */}
               <div className="relative z-10 flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-purple-500 text-white shadow-md shadow-purple-500/30">
                 <Briefcase size={18} />
               </div>
 
-              {/* Card */}
               <div className="flex-1 rounded-xl border border-stone-200 bg-white p-5 transition-all hover:shadow-lg dark:border-stone-700 dark:bg-stone-800/50 sm:p-6">
-                {/* Cabeçalho */}
                 <div className="flex flex-col gap-1 sm:flex-row sm:items-center sm:justify-between">
                   <h3 className="text-lg font-semibold text-stone-800 dark:text-white">
                     {exp.cargo}
@@ -67,7 +80,6 @@ export default function ExperienciaProfissional() {
                   </span>
                 </div>
 
-                {/* Empresa + Local */}
                 <div className="mt-1 flex flex-wrap items-center gap-x-3 gap-y-0.5 text-sm text-stone-500 dark:text-stone-400">
                   <span className="font-medium text-stone-700 dark:text-stone-300">
                     {exp.empresa}
@@ -78,12 +90,10 @@ export default function ExperienciaProfissional() {
                   </span>
                 </div>
 
-                {/* Descrição */}
                 <p className="mt-3 text-sm leading-relaxed text-stone-600 dark:text-stone-400">
                   {exp.descricao}
                 </p>
 
-                {/* Stacks */}
                 <div className="mt-4 flex flex-wrap gap-1.5">
                   {exp.stacks.map((tech) => (
                     <span

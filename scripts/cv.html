@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Currículo - Lucas Amaral</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    color: #1a1523;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 48px;
+    background: #fff;
+  }
+  header {
+    text-align: center;
+    margin-bottom: 32px;
+    padding-bottom: 24px;
+    border-bottom: 3px solid #a855f7;
+  }
+  h1 { font-size: 28px; color: #1a1523; margin-bottom: 4px; }
+  .subtitle { font-size: 15px; color: #a855f7; font-weight: 600; margin-bottom: 12px; }
+  .contact-row {
+    display: flex; flex-wrap: wrap; justify-content: center; gap: 6px 18px;
+    font-size: 13px; color: #5a5273;
+  }
+  .contact-row a { color: #5a5273; text-decoration: none; }
+
+  h2 {
+    font-size: 16px; color: #a855f7; text-transform: uppercase;
+    letter-spacing: 1px; margin: 28px 0 12px;
+  }
+
+  .resumo p { font-size: 14px; color: #3d3856; }
+
+  .skills-grid { display: flex; flex-wrap: wrap; gap: 6px; }
+  .skill-tag {
+    background: #f3f1f6; color: #5a5273; padding: 3px 10px;
+    border-radius: 4px; font-size: 12px; font-weight: 500;
+  }
+
+  .exp-item { margin-bottom: 20px; }
+  .exp-header { display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; margin-bottom: 4px; }
+  .exp-role { font-size: 15px; font-weight: 700; color: #1a1523; }
+  .exp-period { font-size: 12px; color: #a855f7; font-weight: 600; white-space: nowrap; }
+  .exp-company { font-size: 13px; color: #72698b; margin-bottom: 4px; }
+  .exp-desc { font-size: 13px; color: #3d3856; }
+  .exp-stacks { display: flex; flex-wrap: wrap; gap: 4px; margin-top: 6px; }
+  .exp-stack-tag {
+    background: #faf9fb; border: 1px solid #e4e0eb;
+    padding: 1px 8px; border-radius: 3px; font-size: 11px; color: #72698b;
+  }
+
+  .edu-item { margin-bottom: 16px; }
+  .edu-header { display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; margin-bottom: 2px; }
+  .edu-course { font-size: 15px; font-weight: 700; color: #1a1523; }
+  .edu-period { font-size: 12px; color: #a855f7; font-weight: 600; white-space: nowrap; }
+  .edu-school { font-size: 13px; color: #72698b; }
+  .edu-detail { font-size: 12px; color: #9085a4; margin-top: 1px; }
+
+  .project-item { margin-bottom: 16px; }
+  .project-name { font-size: 14px; font-weight: 700; color: #1a1523; }
+  .project-link { font-size: 12px; color: #a855f7; }
+  .project-desc { font-size: 13px; color: #3d3856; margin-top: 2px; }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Lucas Amaral</h1>
+  <p class="subtitle">Desenvolvedor Fullstack Pleno</p>
+  <div class="contact-row">
+    <span>Cuiabá, MT</span>
+    <span><a href="mailto:lucasamaraltecnologia@gmail.com">lucasamaraltecnologia@gmail.com</a></span>
+    <span>+55 (65) 99361-3207</span>
+    <span><a href="https://linkedin.com/in/lucas-amaral-desenvolvedor">linkedin.com/in/lucas-amaral-desenvolvedor</a></span>
+    <span><a href="https://github.com/LucasAmaralDev">github.com/LucasAmaralDev</a></span>
+  </div>
+</header>
+
+<section>
+  <h2>Resumo Profissional</h2>
+  <div class="resumo">
+    <p>
+      Desenvolvedor Fullstack Pleno com mais de 3 anos construindo sistemas robustos do zero.
+      De plataformas SaaS de georreferenciamento para prefeituras até a modernização de sistemas
+      governamentais como o Detran-MT e o app MT Cidadão. Trabalho com Next.js, NestJS, TypeScript
+      e bancos relacionais como PostgreSQL e SQL Server. Além do trabalho em equipe, crio e mantenho
+      projetos próprios que me deram uma visão completa do ciclo de vida de um produto: da ideia à
+      monetização e gestão de comunidade.
+    </p>
+  </div>
+</section>
+
+<section>
+  <h2>Competências Técnicas</h2>
+  <div class="skills-grid">
+    <span class="skill-tag">Next.js</span>
+    <span class="skill-tag">React</span>
+    <span class="skill-tag">NestJS</span>
+    <span class="skill-tag">Node.js</span>
+    <span class="skill-tag">TypeScript</span>
+    <span class="skill-tag">Python</span>
+    <span class="skill-tag">PostgreSQL</span>
+    <span class="skill-tag">SQL Server</span>
+    <span class="skill-tag">MongoDB</span>
+    <span class="skill-tag">Tailwind CSS</span>
+    <span class="skill-tag">Express</span>
+    <span class="skill-tag">Electron.js</span>
+    <span class="skill-tag">WebSockets</span>
+    <span class="skill-tag">REST APIs</span>
+    <span class="skill-tag">Nginx</span>
+    <span class="skill-tag">Docker</span>
+    <span class="skill-tag">Git</span>
+    <span class="skill-tag">Jest</span>
+    <span class="skill-tag">Mercado Pago</span>
+  </div>
+</section>
+
+<section>
+  <h2>Experiência Profissional</h2>
+
+  <div class="exp-item">
+    <div class="exp-header">
+      <span class="exp-role">Desenvolvedor Full Stack</span>
+      <span class="exp-period">Set 2024 — Atual</span>
+    </div>
+    <p class="exp-company">DDTank Universe · Brasil</p>
+    <p class="exp-desc">
+      Atuo como full stack no ecossistema digital completo do jogo: site oficial com React.js e Next.js, aplicação desktop com Electron.js, APIs em Node.js com Express e JWT, WebSockets para eventos em tempo real, SQL Server com TypeORM, e infraestrutura com Nginx. Sistemas de pagamentos e recompensas integrados.
+    </p>
+    <div class="exp-stacks">
+      <span class="exp-stack-tag">React.js</span>
+      <span class="exp-stack-tag">Next.js</span>
+      <span class="exp-stack-tag">Electron.js</span>
+      <span class="exp-stack-tag">Node.js</span>
+      <span class="exp-stack-tag">WebSockets</span>
+      <span class="exp-stack-tag">SQL Server</span>
+      <span class="exp-stack-tag">Nginx</span>
+    </div>
+  </div>
+
+  <div class="exp-item">
+    <div class="exp-header">
+      <span class="exp-role">Engenheiro de Software</span>
+      <span class="exp-period">Mai 2025 — Dez 2025</span>
+    </div>
+    <p class="exp-company">Lexin Innovations · Cuiabá, MT</p>
+    <p class="exp-desc">
+      Engenheiro Fullstack no projeto ESeiafMT para licitações públicas. Apliquei DDD e Clean Architecture para construir sistema modular. Backend com NestJS, TypeORM e PostgreSQL. Frontend com Next.js, PrimeReact, Zustand e Zod. Cultura de testes automatizados com Jest. Participação ativa em decisões arquiteturais e de produto.
+    </p>
+    <div class="exp-stacks">
+      <span class="exp-stack-tag">NestJS</span>
+      <span class="exp-stack-tag">Next.js</span>
+      <span class="exp-stack-tag">TypeORM</span>
+      <span class="exp-stack-tag">PostgreSQL</span>
+      <span class="exp-stack-tag">PrimeReact</span>
+      <span class="exp-stack-tag">Zustand</span>
+      <span class="exp-stack-tag">Jest</span>
+    </div>
+  </div>
+
+  <div class="exp-item">
+    <div class="exp-header">
+      <span class="exp-role">Desenvolvedor Full Stack</span>
+      <span class="exp-period">Mar 2025 — Mai 2025</span>
+    </div>
+    <p class="exp-company">Liquid AI · Remoto</p>
+    <p class="exp-desc">
+      Desenvolvimento de soluções para setor imobiliário com foco em análise de crédito e risco. Integrações com APIs Serasa e Equifax. Backend com Python, arquitetura Serverless e MongoDB. Frontend com React e interfaces responsivas para uso interno e clientes.
+    </p>
+    <div class="exp-stacks">
+      <span class="exp-stack-tag">Python</span>
+      <span class="exp-stack-tag">Serverless</span>
+      <span class="exp-stack-tag">MongoDB</span>
+      <span class="exp-stack-tag">React</span>
+      <span class="exp-stack-tag">Serasa API</span>
+      <span class="exp-stack-tag">Equifax API</span>
+    </div>
+  </div>
+
+  <div class="exp-item">
+    <div class="exp-header">
+      <span class="exp-role">Desenvolvedor de Software</span>
+      <span class="exp-period">Fev 2024 — Mar 2025</span>
+    </div>
+    <p class="exp-company">MTI — Empresa Mato-grossense de Tecnologia da Informação · Cuiabá, MT</p>
+    <p class="exp-desc">
+      Manutenção e evolução dos sistemas do Detran-MT e do aplicativo MT Cidadão. Padronização de templates React e Node.js. Correção de bugs críticos, refatoração de código legado e implementação de testes unitários. Integração de APIs com NestJS. Monitoramento com Graylog e Sentry. Gestão de bancos de dados para alta disponibilidade.
+    </p>
+    <div class="exp-stacks">
+      <span class="exp-stack-tag">React</span>
+      <span class="exp-stack-tag">Node.js</span>
+      <span class="exp-stack-tag">NestJS</span>
+      <span class="exp-stack-tag">TypeScript</span>
+      <span class="exp-stack-tag">Graylog</span>
+      <span class="exp-stack-tag">Sentry</span>
+    </div>
+  </div>
+
+  <div class="exp-item">
+    <div class="exp-header">
+      <span class="exp-role">Desenvolvedor Full Stack — Georreferenciamento</span>
+      <span class="exp-period">Ago 2023 — Out 2024</span>
+    </div>
+    <p class="exp-company">WCOGEO · Cuiabá, MT</p>
+    <p class="exp-desc">
+      Sistema SaaS completo de georreferenciamento para prefeituras, otimizando regularização fundiária e administração territorial. Backend com Node.js, TypeORM e PostgreSQL/SQL Server integrado ao GeoServer. Frontend com React e OpenLayers. Infraestrutura com Docker, Nginx e servidores Windows/Linux.
+    </p>
+    <div class="exp-stacks">
+      <span class="exp-stack-tag">Node.js</span>
+      <span class="exp-stack-tag">TypeORM</span>
+      <span class="exp-stack-tag">PostgreSQL</span>
+      <span class="exp-stack-tag">SQL Server</span>
+      <span class="exp-stack-tag">GeoServer</span>
+      <span class="exp-stack-tag">React</span>
+      <span class="exp-stack-tag">OpenLayers</span>
+      <span class="exp-stack-tag">Docker</span>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Formação Acadêmica</h2>
+
+  <div class="edu-item">
+    <div class="edu-header">
+      <span class="edu-course">Bacharelado, Análise e Desenvolvimento de Sistemas</span>
+      <span class="edu-period">Fev 2024 — Ago 2027</span>
+    </div>
+    <p class="edu-school">IMES — Instituto Mineiro de Ensino Superior</p>
+  </div>
+
+  <div class="edu-item">
+    <div class="edu-header">
+      <span class="edu-course">FIC_DEV — Trilha Node.js + React, Programador de Sistemas</span>
+      <span class="edu-period">Fev 2023 — Out 2023</span>
+    </div>
+    <p class="edu-school">SECITECI — MT</p>
+    <p class="edu-detail">Carga horária: 360 horas</p>
+  </div>
+</section>
+
+<section>
+  <h2>Projetos em Produção</h2>
+
+  <div class="project-item">
+    <span class="project-name">DDTank Universe</span>
+    <span class="project-link">— ddtankuniverse.com.br</span>
+    <p class="project-desc">
+      Servidor completo do clássico DDTank com ecossistema digital próprio: site, versão desktop com Electron.js, mobile, sistema de pagamentos e recompensas. Comunidade ativa de jogadores.
+    </p>
+  </div>
+
+  <div class="project-item">
+    <span class="project-name">LinkasBio</span>
+    <span class="project-link">— linkasbio.com</span>
+    <p class="project-desc">
+      Plataforma de bio links independente e autossustentável. Construída do zero como projeto solo, com visão de produto completa: da concepção ao desenvolvimento, monetização e gestão de usuários.
+    </p>
+  </div>
+
+  <div class="project-item">
+    <span class="project-name">SC Fibra</span>
+    <span class="project-link">— scfibra.net</span>
+    <p class="project-desc">
+      Sistema completo para provedor de internet fibra óptica. Da landing page ao backoffice com gestão de clientes, cobranças via Mercado Pago, controle de equipe técnica em campo e bot de atendimento 24/7 via WhatsApp.
+    </p>
+  </div>
+</section>
+
+</body>
+</html>
