@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function SobreMim() {
   return (
-    <section className="flex flex-col items-center px-4 py-16 sm:py-24">
+    <section id="sobre-mim" className="flex flex-col items-center px-4 py-16 sm:py-24">
         <h2 className="text-3xl font-bold text-black dark:text-white sm:text-4xl">
             Sobre mim
         </h2>

@@ -5,7 +5,7 @@ import DigitandoTexto from "./DigitandoTexto";
 
 export default function HeroSection() {
   return (
-    <section className="flex min-h-[60dvh] w-full flex-col-reverse items-center justify-center gap-10 px-4 py-12 md:flex-row md:justify-around md:px-6 md:py-0">
+    <section id="topo" className="flex min-h-[60dvh] w-full flex-col-reverse items-center justify-center gap-10 px-4 py-12 md:flex-row md:justify-around md:px-6 md:py-0">
       {/* Left: Text + Buttons */}
       <div className="flex flex-col items-center gap-8 md:items-start">
         <DigitandoTexto />
