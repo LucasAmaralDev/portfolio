@@ -36,10 +36,10 @@ export default function DigitandoTexto() {
     }, [divhello, divName, divDesc])
 
   return (
-    <div className="w-4xl">
-       <h1 className="font-semibold text-5xl">{divhello}</h1>
-       {divName.length > 0 && (<span className="text-5xl dark:text-purple-500 text-purple-600 font-bold">{divName}</span>)}
-       {divDesc.length > 0 && (<p className="text-xl dark:text-gray-300 text-gray-500">{divDesc}</p>)}
+    <div className="w-full text-center md:text-left">
+       <h1 className="text-2xl font-semibold text-stone-700 dark:text-stone-300 sm:text-4xl lg:text-5xl">{divhello}</h1>
+       {divName.length > 0 && (<span className="text-2xl font-bold text-purple-600 dark:text-purple-400 sm:text-4xl lg:text-5xl">{divName}</span>)}
+       {divDesc.length > 0 && (<p className="mt-2 text-sm text-gray-500 dark:text-gray-400 sm:text-lg lg:text-xl">{divDesc}</p>)}
     </div>
   )
 }

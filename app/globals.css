@@ -2,3 +2,18 @@
 
 /* Use class-based dark mode instead of media-query-based */
 @custom-variant dark (&:where(.dark, .dark *));
+
+/* Radix Colors Mauve palette */
+@theme {
+  --color-mauve-50: #faf9fb;
+  --color-mauve-100: #f3f1f6;
+  --color-mauve-200: #e4e0eb;
+  --color-mauve-300: #d5cce0;
+  --color-mauve-400: #b3a7c2;
+  --color-mauve-500: #9085a4;
+  --color-mauve-600: #72698b;
+  --color-mauve-700: #5a5273;
+  --color-mauve-800: #3d3856;
+  --color-mauve-900: #1a1523;
+  --color-mauve-950: #110e1b;
+}
